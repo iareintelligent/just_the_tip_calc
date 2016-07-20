@@ -1,0 +1,46 @@
+label {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+input {
+  text-align: center;
+}
+
+#calculator {
+  border: 1px solid;
+  padding: 10px;
+  width: 100%;
+}
+
+#calcMods {
+  /*border:1px solid;*/
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+}
+
+#calcTots {
+  padding-top: 40px;
+  padding-left: 15px;
+  /*border: 1px solid;*/
+  width: 55%;
+  display: inline-block;
+  /*overflow: hidden;*/
+}
+
+.result {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.result_text {
+  width: 30%;
+}
+
+.result_data {
+  width: 70%;
+  text-align: right;
+}

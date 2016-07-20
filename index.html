@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="It's all about the tip">
+  <meta name="author" content="TOPH!">
+  <title>(just the) Tip Calculator</title>
+
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/jttCalc.css">
+</head>
+
+<body>
+  <div id="calculator">
+    <div id="calcMods">
+      <label>Bill</label>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon-1">$</span>
+        <input type="text" class="form-control" aria-label="...">
+      </div>
+
+      <label>Tip %</label>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-number"   data-type="minus" data-field="quant[1]">
+            -
+          </button>
+        </span>
+        <input type="text" class="form-control" aria-label="..." placeholder="18%">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">+</button></span>
+      </div>
+
+      <label># of people (split)</label>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">-</button>
+        </span>
+        <input type="text" class="form-control" aria-label="..." placeholder="1">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">+</button>
+        </span>
+      </div>
+    </div>
+    <div id="calcTots">
+      <div class="result">
+        <h3 class="result_text">Tip:</h3>
+        <h3 class="result_data" id="tip"></h3>
+      </div>
+      <div class="result">
+        <h3 class="result_text" id="total">Total:</h3>
+        <h3 class="result_data"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jttCalc.js"></script>
+</body>
