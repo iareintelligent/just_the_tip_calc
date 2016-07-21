@@ -37,10 +37,12 @@ input {
 }
 
 .result_text {
+  display: inline-block;
   width: 30%;
 }
 
 .result_data {
-  width: 70%;
+  display: inline-block;
+  width: 65%;
   text-align: right;
 }
