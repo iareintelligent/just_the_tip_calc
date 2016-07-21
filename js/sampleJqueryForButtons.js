@@ -1,7 +1,3 @@
-var minus = document.getElementBy
-
-
-
 $('.btn-number').click(function(e) {
     e.preventDefault();
     fieldName = $(this).attr('data-field');

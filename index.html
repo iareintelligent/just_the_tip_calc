@@ -20,7 +20,7 @@
       <label>Bill</label>
       <div class="input-group">
         <span class="input-group-addon" id="basic-addon-1">$</span>
-        <input type="text" class="form-control" aria-label="...">
+        <input type="number" step=".01" class="form-control" aria-label="..." id="bill" placeholder="0" pattern="^\\$?(([1-9](\\d*|\\d{0,2}(,\\d{3})*))|0)(\\.\\d{1,2})?$">
       </div>
 
       <label>Tip %</label>
@@ -30,17 +30,17 @@
             -
           </button>
         </span>
-        <input type="text" class="form-control" aria-label="..." placeholder="18%">
+        <input type="number" step="1" class="form-control" aria-label="..." placeholder="18" id="percent_tip" pattern="[0-9]+(\.[0-9]{0,2})?%?">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button">+</button></span>
       </div>
 
-      <label># of people (split)</label>
+      <label># of people (denominator)</label>
       <div class="input-group">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button">-</button>
         </span>
-        <input type="text" class="form-control" aria-label="..." placeholder="1">
+        <input type="number" step="1" class="form-control" aria-label="..." placeholder="1" id="denominator" pattern="[0-9]">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button">+</button>
         </span>
@@ -49,14 +49,14 @@
     <div id="calcTots">
       <div class="result">
         <h3 class="result_text">Tip:</h3>
-        <h3 class="result_data" id="tip">test</h3>
+        <h3 class="result_data" id="tip_amount"></h3>
       </div>
       <div class="result">
-        <h3 class="result_text" id="total">Total:</h3>
-        <h3 class="result_data">testing</h3>
+        <h3 class="result_text">Total:</h3>
+        <h3 class="result_data" id="total"></h3>
       </div>
     </div>
   </div>
 
   <script src="js/jttCalc.js"></script>
-</body>
+  </body>
