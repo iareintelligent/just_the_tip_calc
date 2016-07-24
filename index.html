@@ -20,32 +20,31 @@
       <label>Bill</label>
       <div class="input-group">
         <span class="input-group-addon" id="basic-addon-1">$</span>
-        <input type="number" step=".01" class="form-control" aria-label="..." id="bill" placeholder="0" pattern="^\\$?(([1-9](\\d*|\\d{0,2}(,\\d{3})*))|0)(\\.\\d{1,2})?$">
+        <input type="number" step=".01" class="form-control" id="bill" placeholder="0" pattern="^\\$?(([1-9](\\d*|\\d{0,2}(,\\d{3})*))|0)(\\.\\d{1,2})?$">
       </div>
 
       <label>Tip %</label>
-      <div class="input-group">
+      <div class="input-group xcrement">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default btn-number"   data-type="minus" data-field="quant[1]">
-            -
-          </button>
+          <button type="button" class="btn btn-default btn-number minus">-</button>
         </span>
-        <input type="number" step="1" class="form-control" aria-label="..." placeholder="18" id="percent_tip" pattern="[0-9]+(\.[0-9]{0,2})?%?">
+        <input type="number" step="1" class="form-control" placeholder="18" id="percent_tip" pattern="[0-9]+(\.[0-9]{0,2})?%?">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">+</button></span>
+          <button type="button" class="btn btn-default btn-number plus" >+</button></span>
       </div>
 
-      <label># of people (denominator)</label>
-      <div class="input-group">
+      <label># of people (numPeeps)</label>
+      <div class="input-group xcrement">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">-</button>
+          <button type="button" class="btn btn-default btn-number minus">-</button>
         </span>
-        <input type="number" step="1" class="form-control" aria-label="..." placeholder="1" id="denominator" pattern="[0-9]">
+        <input type="number" step="1" class="form-control" placeholder="1" id="numPeeps" pattern="[0-9]">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">+</button>
+          <button type="button" class="btn btn-default btn-number plus" >+</button>
         </span>
       </div>
     </div>
+
     <div id="calcTots">
       <div class="result">
         <h3 class="result_text">Tip:</h3>
@@ -57,6 +56,6 @@
       </div>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   <script src="js/jttCalc.js"></script>
   </body>
