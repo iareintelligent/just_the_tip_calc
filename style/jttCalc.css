@@ -53,3 +53,9 @@ input::-webkit-inner-spin-button {
   width: 65%;
   text-align: right;
 }
+
+#report_card {
+  border: 1px solid;
+  padding: 10px;
+  width: 500px;
+}

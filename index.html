@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="It's all about the tip">
   <meta name="author" content="TOPH!">
-  <title>(just the) Tip Calculator</title>
+  <title>Tip Calculator</title>
 
   <!-- Latest compiled and minified bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -56,6 +56,24 @@
       </div>
     </div>
   </div>
+
+  <div id="report_card">
+    <div class="form-group">
+      <label class="sr-only">Business Name</label>
+      <input type="text" placeholder="Business Name...">
+    </div>
+    <div class="form-group">
+      <p>Star Rating System to go here</p>
+    </div>
+    <div class="form-group">
+      <label class="sr-only">Message</label>
+      <textarea type="text" name="message" class="form-control" rows="5" placeholder="How was your experience this time around?"></textarea>
+    </div>
+    <input type="submit" id="submit" class="btn btn-default btn-lg" value="Submit"/>
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   <script src="js/jttCalc.js"></script>
+  <script src="js/report-card.js"></script>
   </body>
